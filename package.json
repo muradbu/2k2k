@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "The website for Minecraft server 2K2K made using GatsbyJS.",
+  "version": "0.1.0",
+  "license": "GNU GPL v3.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gatsby": "^2.19.49",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuradBuyukasik/2k2k-website"
+  },
+  "bugs": {
+    "url": "https://github.com/MuradBuyukasik/2k2k-website/issues"
+  }
+}
