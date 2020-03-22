@@ -25,11 +25,11 @@ export default () => {
                     <Brand styleName="mb-4" />
                     <VoteExpand />
                     <Row>
-                        <Col>
+                        <Col xs={12} sm={12} md={6} lg={6}>
                             <StickyCard title="Welcome to the new website!" description={stickyMessage} />
                             <Card title="Test card" description="News items will come here!" />
                         </Col>
-                        <Col>
+                        <Col xs={12} sm={12} md={6} lg={6}>
                             <GeneralCard title="Polls">
                                 <Poll pollTitle="Placeholder poll" />
                                 <small className="font-italic bottom">Log into the server to vote</small>
