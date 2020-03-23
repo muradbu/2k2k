@@ -12,7 +12,7 @@ export default function Brand(props) {
 
     return (
         <>
-            <OverlayTrigger placement="bottom" overlay={renderTooltip} onHide={() => console.log("e")}>
+            <OverlayTrigger placement="bottom" overlay={renderTooltip}>
                 <h4 className={`text-center ${props.styleName}`} onClick={() => { copyAndChangeMessage() }}>Join us at <span className="text-brand">2k2k.org</span>!</h4>
             </OverlayTrigger>
         </>

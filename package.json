@@ -17,6 +17,8 @@
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.49",
     "gatsby-plugin-react-helmet": "^3.2.0",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",

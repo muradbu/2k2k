@@ -1,21 +1,19 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import DiscordRefer from '../components/DiscordRefer';
-import { Row, Col } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
 
 export default function Footer() {
     return (
-        <footer className="text-muted py-4">
+        <Navbar sticky="bottom" bg="light" variant="light">
             <Container>
-                <Row>
-                    <Col>
-                        <p>© 2K2K</p>
-                    </Col>
-                    <Col className="d-flex flex-row-reverse">
+                © 2K2K Survival
+            <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Text>
                         <DiscordRefer />
-                    </Col>
-                </Row>
+                    </Navbar.Text>
+                </Navbar.Collapse>
             </Container>
-        </footer>
+        </Navbar>
     )
 }
