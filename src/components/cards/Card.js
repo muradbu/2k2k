@@ -1,17 +1,23 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-// Temporary import, delete later
-import placeholder from '../../../static/placeholder.png';
+import Card from 'react-bootstrap/Card'
 
-export default function Card(props) {
+export default function CardItem(props) {
   return (
-    <div className="card mt-3">
-      <img className="card-img-top" src={placeholder} alt="news" />
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
-        <Button variant="primary">Read more</Button>
-      </div>
-    </div>
+    <Card className="mt-3">
+      {props.sticky ? <Card.Header>Featured announcement</Card.Header> : ''}
+      <Card.Body>
+        <Card.Title>
+          {props.title}
+        </Card.Title>
+        <Card.Text>
+          {props.children}
+        </Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        <small className="text-muted">
+          {props.date}
+        </small>
+      </Card.Footer>
+    </Card>
   )
 }
