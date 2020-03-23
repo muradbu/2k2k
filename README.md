@@ -8,7 +8,7 @@ Paste the snippet below:
 
 ```
 ---
-date: "YYYY-MM-DD"
+date: "YYYY-MM-DD" //posts are sorted by date descending
 title: "Your title"
 sticky: false //true or false depending if you want the post to be stickied or not
 ---
