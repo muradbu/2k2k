@@ -27,8 +27,8 @@ const Home: NextPage = () => {
         <meta name="description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container mx-auto max-w-3xl flex min-h-screen flex-col items-center justify-center">
-        <h1 className="text-5xl text-red-600 font-extrabold leading-normal md:text-[5rem] text-center">
+      <main className="container mx-auto max-w-3xl flex min-h-screen p-4 flex-col items-center justify-center">
+        <h1 className="text-4xl text-red-600 font-extrabold leading-normal md:text-[5rem] text-center">
           2K2K Anarchy
         </h1>
         <p className="text-white text-center">
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <p className="mt-8 mb-12 text-white text-center">
           Join the chaos.
         </p>
-        <div className="flex space-x-4">
+        <div className="flex flex-col text-center space-y-4 md:space-x-4 md:space-y-0 md:flex-row">
           <a href="https://discord.gg/Tz5pBCts9K" target="_blank" rel="noreferrer" className="text-white px-3 py-1 rounded-lg transition duration-150 ease-out hover:ease-in hover:bg-purple-700 bg-purple-800 text-bold">
             Join our Discord
           </a>
