@@ -2,17 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 
+
 const Home: NextPage = () => {
-  const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    if (copied) {
-      setTimeout(() => {
-        setCopied(false);
-      }, 3000);
-    }
-  }, [copied]);
-
   return (
     <>
       <Head>
@@ -34,27 +25,46 @@ const Home: NextPage = () => {
         <p className="text-white text-center">
           2K2K is a vanilla Minecraft survival server on hard mode, also known as Anarchy; there are no rules. Join our Discord, conversate a few and come play!
         </p>
-        <p className="mt-8 mb-12 text-white text-center">
-          Join the chaos.
-        </p>
-        <div className="flex flex-col text-center space-y-4 md:space-x-4 md:space-y-0 md:flex-row">
-          <a href="https://discord.gg/Tz5pBCts9K" target="_blank" rel="noreferrer" className="text-white px-3 py-1 rounded-lg transition duration-150 ease-out hover:ease-in hover:bg-purple-700 bg-purple-800 text-bold">
-            Join our Discord
-          </a>
-          <div className="flex items-stretch rounded-lg border shadow-sm text-white">
-            <div className="px-3 py-1 border-r">
-              play.2k2k.org
-            </div>
-            <div className="px-3 py-1 font-bold text-neutral-300 transition duration-150 ease-out hover:ease-in hover:text-white cursor-pointer" onClick={() => { navigator.clipboard.writeText("play.2k2k.org"); setCopied(true) }}>
-              {
-                copied ? "✔" : "Copy"
-              }
-            </div>
-          </div>
+        <div className="flex flex-col text-center space-y-4 md:space-x-4 md:space-y-0 md:flex-row mt-12">
+          <JoinDiscord />
+          <IPBar />
         </div>
       </main>
     </>
   );
 };
+
+const JoinDiscord = () => {
+  return (
+    <a href="https://discord.gg/Tz5pBCts9K" target="_blank" rel="noreferrer" className="text-white px-3 py-1 rounded-lg transition duration-150 ease-out hover:ease-in hover:bg-purple-700 bg-purple-800 text-bold">
+      Join our Discord
+    </a>
+  )
+}
+
+const IPBar = () => {
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (copied) {
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    }
+  }, [copied]);
+
+  return (
+    <div className="flex items-stretch rounded-lg border shadow-sm text-white">
+      <div className="px-3 py-1 border-r">
+        play.2k2k.org
+      </div>
+      <div className="px-3 py-1 font-bold text-neutral-300 transition duration-150 ease-out hover:ease-in hover:text-white cursor-pointer" onClick={() => { navigator.clipboard.writeText("play.2k2k.org"); setCopied(true) }}>
+        {
+          copied ? "Copied!" : "Copy"
+        }
+      </div>
+    </div>
+  )
+}
 
 export default Home;
