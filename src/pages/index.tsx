@@ -17,6 +17,13 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>2K2K Servers</title>
+        <meta property="og:title" content="2K2K Servers" key="title" />
+        <meta property="og:description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." key="description" />
+        <meta property="og:image" content="https://cdn.discordapp.com/attachments/1027668369262006434/1028714358236266596/unknown.png" key="image" />
+        <meta property="og:url" content="https://2k2k.org" key="url" />
+        <meta property="og:type" content="website" key="type" />
+        <meta property="og:site_name" content="2K2K Servers" key="site_name" />
+        <meta property="og:locale" content="en_US" key="locale" />
         <meta name="description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
