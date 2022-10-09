@@ -16,6 +16,16 @@ const Home: NextPage = () => {
         <meta property="og:site_name" content="2K2K Servers" key="site_name" />
         <meta property="og:locale" content="en_US" key="locale" />
         <meta name="theme-color" content="#000000" />
+        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
+        <meta name="twitter:site" content="@muradbuyukasik" key="twitter:site" />
+        <meta name="twitter:creator" content="@muradbuyukasik" key="twitter:creator" />
+        <meta name="twitter:title" content="2K2K Servers" key="twitter:title" />
+        <meta name="twitter:description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." key="twitter:description" />
+        <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1027668369262006434/1028714358236266596/unknown.png" key="twitter:image" />
+        <meta name="twitter:url" content="https://2k2k.org" key="twitter:url" />
+        <meta name="twitter:domain" content="2k2k.org" key="twitter:domain" />
+        <meta name="twitter:label1" content="2K2K Servers" key="twitter:label1" />
+        <meta name="twitter:data1" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." key="twitter:data1" />
         <meta name="description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
