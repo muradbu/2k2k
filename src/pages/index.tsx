@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>2K2K Servers</title>
+        <title>2K2K Anarchy</title>
         <meta property="og:type" content="website" key="type" />
         <meta property="og:url" content="https://2k2k.org" key="url" />
         <meta property="og:title" content="2K2K Anarchy" key="title" />
