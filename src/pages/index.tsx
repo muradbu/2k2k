@@ -8,17 +8,24 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>2K2K Servers</title>
-        <meta property="og:title" content="2K2K Servers" key="title" />
-        <meta property="og:description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play! Join the Chaos." key="description" />
-        <meta property="og:image" content="/logo.png" key="image" />
-        <meta property="og:url" content="https://2k2k.org" key="url" />
         <meta property="og:type" content="website" key="type" />
-        <meta property="og:site_name" content="2K2K Servers" key="site_name" />
+        <meta property="og:url" content="https://2k2k.org" key="url" />
+        <meta property="og:title" content="2K2K Anarchy" key="title" />
+        <meta property="og:image" content="https://2k2k.org/logo.png" key="image" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play!" key="description" />
+        <meta property="og:site_name" content="2K2K Anarchy" key="site_name" />
         <meta property="og:locale" content="en_US" key="locale" />
-        <meta name="theme-color" content="#000000" />
         <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
+        <meta name="twitter:domain" content="2k2k.org" />
+        <meta name="twitter:url" content="https://2k2k.org/" />
+        <meta name="twitter:title" content="2K2K Anarchy" />
+        <meta name="twitter:description" content="2K2K is a Minecraft Anarchy server. Join our Discord, conversate a few and come play!" />
+        <meta name="twitter:image" content="https://2k2k.org/logo.png" />
         <meta name="twitter:site" content="@muradbuyukasik" key="twitter:site" />
         <meta name="twitter:creator" content="@muradbuyukasik" key="twitter:creator" />
+        <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="container mx-auto max-w-3xl flex min-h-screen p-4 flex-col items-center justify-center">
