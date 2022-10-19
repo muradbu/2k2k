@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
 const JoinDiscord = () => {
   return (
-    <a href="https://discord.gg/Tz5pBCts9K" target="_blank" rel="noreferrer" className="text-white px-3 py-1 rounded-lg transition duration-150 ease-out hover:ease-in hover:bg-purple-700 bg-purple-800 text-bold">
+    <a href="https://discord.gg/QUQNEMRdh6" target="_blank" rel="noreferrer" className="text-white px-3 py-1 rounded-lg transition duration-150 ease-out hover:ease-in hover:bg-purple-700 bg-purple-800 text-bold">
       Join our Discord
     </a>
   )
