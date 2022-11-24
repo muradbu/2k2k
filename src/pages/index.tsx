@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import logo from "../public/logo.png";
 
 const Home: NextPage = () => {
   return (
